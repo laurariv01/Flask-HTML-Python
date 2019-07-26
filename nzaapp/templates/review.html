@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Leave a Review</h1>
+
+<!--Review Form-->
+<form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email address</label>
+      {{ form.email(class="form-control",placeholder="@name@email.com")}}
+    </div>
+    <div class="form-group">
+        <div class="form-group">
+      <label for="exampleFormControlInput1">First and Last Name</label>
+      {{ form.email(class="form-control" )}}
+    </div>
+     
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Leave us a review in the text box below.</label>
+      {{ form.email(class="form-control",placeholder="@name@email.com")}}
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+      {{ form.submit(class="btn btn-primary") }}
+      
+    </div>
+  </form>
+
+
+
+{% endblock content %}
